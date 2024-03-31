@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send Money</title>
+    <style>
+        /* Your existing CSS styles here */
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #007a4d; /* Green color */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005f3b; /* Darker green color on hover */
+        }
+
+        /* Green banner styles */
+        .banner {
+            background-color: #007a4d; /* Green color */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        /* Keep your existing styles for other elements */
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h2>Welcome to TD BANK</h2>
+    </div>
+    <div class="container">
+        <h1>Send Money</h1>
+        <p>Current Balance: ${{ balance }}</p>
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        {% if success %}
+            <p style="color: green;">{{ success }}</p>
+        {% endif %}
+        <form method="post">
+            <label for="sender">Sender:</label><br>
+            <input type="text" id="sender" name="sender" required><br>
+
+            <label for="sender_email">Sender Email:</label><br>
+            <input type="email" id="sender_email" name="sender_email" required><br>
+
+            <label for="recipient">Recipient:</label><br>
+            <input type="text" id="recipient" name="recipient" required><br>
+
+            <label for="recipient_email">Recipient Email:</label><br>
+            <input type="email" id="recipient_email" name="recipient_email" required><br>
+
+            <label for="amount">Amount:</label><br>
+            <input type="number" id="amount" name="amount" required><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>
