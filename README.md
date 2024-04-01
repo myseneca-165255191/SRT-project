@@ -1,7 +1,7 @@
 # Project Proposal: Sending Money Web Application
 
-**Professor:** [Insert Professor's Name]  
-**Student:** Andrea Polito  
+**Professor:** Nilay  
+**Student:** Andrea Polito  , Avi Patel
 
 ## Introduction / Proposal
 
