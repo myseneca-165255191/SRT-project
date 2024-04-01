@@ -1,6 +1,7 @@
 # Project Proposal: Sending Money Web Application
 
 **Professor:** Nilay  
+**Group:** 15
 **Student:** Andrea Polito  , Avi Patel
 
 ## Introduction / Proposal
@@ -29,6 +30,12 @@ Ensure the transferred amount is within the sender's initial balance.
 - Develop error handling mechanisms to address any issues encountered during money transfers.
 - Provide informative error messages to guide users through the resolution process.
 
+## future conisderation
+
+This project is a relatvely simple demonstartion of what can be achieved, future consideration for this project may be a better user interface, im-lementing more security focussed measures, aswell as addtional database functionalities pertaining to other users, where multiple users tranaction logs gets updated when money is sent.
+
 ## Conclusion
 
-The proposed web application aims to streamline money transfers between users while prioritizing security, usability, and reliability. By making use of Flask API and HTML template for user interface as well as SQLite for database integration, we intend to create a robust platform for safe and efficient money transactions.
+The proposed web application aims to simulate money transfers between users while prioritizing, usability, and reliability. By making use of Flask API and HTML template for user interface as well as SQLite for database integration, we intend to create a robust platform for safe and efficient money transactions.
+
+
