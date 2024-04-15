@@ -8,9 +8,9 @@ app = Flask(__name__)
 conn = sqlite3.connect('transactions.db', check_same_thread=False)
 cursor = conn.cursor()
 
-# Create transaction log table if not exists
+
 cursor.execute('''
-    CREATE TABLE IF NOT EXISTS transactions (
+    CREATE TABle (
         id INTEGER PRIMARY KEY,
         sender TEXT NOT NULL,
         recipient TEXT NOT NULL,
@@ -20,7 +20,7 @@ cursor.execute('''
 ''')
 conn.commit()
 
-# Initialize balance
+
 balance = 1000
 
 
@@ -58,7 +58,7 @@ def receipt():
     recipient = request.args.get('recipient')
     amount = request.args.get('amount')
 
-    # Retrieve transaction logs from the database
+   
     cursor.execute('''
         SELECT * FROM transactions WHERE sender = ? AND recipient = ? AND amount = ?
     ''', (sender, recipient, amount))
