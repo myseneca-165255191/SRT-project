@@ -5,42 +5,42 @@
     <style>
         /* Styling for the banner */
         .banner {
-            background-color: #007bff; /* Blue background */
-            color: white; /* White text color */
-            text-align: center; /* Center-align text */
-            padding: 10px; /* Padding around the text */
-            margin-bottom: 20px; /* Bottom margin */
+            background-color: #007bff; 
+            color: white; 
+            text-align: center; 
+            padding: 10px; 
+            margin-bottom: 20px; 
         }
     </style>
 </head>
 <body>
-    <!-- Banner text -->
+    
     <div class="banner">
         <h1>Welcome to SRT Bank</h1> 
     </div>
     <div class="container">
-        <h1>Send Money</h1> <!-- Title for the send money section -->
-        <p>Current Balance: ${{ balance }}</p> <!-- Display current balance -->
+        <h1>Send Money</h1> 
+        <p>Current Balance: ${{ balance }}</p> 
         {% if error %}
-            <p style="color: red;">{{ error }}</p> <!-- Display error message in red or success message in green-->
+            <p style="color: red;">{{ error }}</p> 
         {% endif %}
         {% if success %}
             <p style="color: green;">{{ success }}</p> 
         {% endif %}
-        <form method="post"> <!-- Form for sending money, method is post -->
-            <label for="sender">Sender:</label><br> <!-- Label and input field for sender's name -->
+        <form method="post">
+            <label for="sender">Sender:</label><br> 
             <input type="text" id="sender" name="sender" required><br>
 
-            <label for="sender_email">Sender Email:</label><br> <!-- Label and input field for sender's email -->
+            <label for="sender_email">Sender Email:
             <input type="email" id="sender_email" name="sender_email" required><br>
 
-            <label for="recipient">Recipient:</label><br> <!-- Label and input field for recipient's name -->
+            <label for="recipient">Recipient:</label><br> 
             <input type="text" id="recipient" name="recipient" required><br>
 
-            <label for="recipient_email">Recipient Email:</label><br> <!-- Label and input field for recipient's email -->
+            <label for="recipient_email">Recipient Email:</label><br>
             <input type="email" id="recipient_email" name="recipient_email" required><br>
 
-            <label for="amount">Amount:</label><br> <!-- Label and input field for the amount to send -->
+            <label for="amount">Amount:</label><br> 
             <input type="number" id="amount" name="amount" required><br>
 
             <input type="submit" value="Send"> <!-- Submit button  -->
