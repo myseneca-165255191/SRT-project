@@ -2,7 +2,7 @@
 
 **Professor:** Nilay  
 **Group:** 15
-**Student:** Andrea Polito  , Avi Patel
+**Student:** Andrea Polito  , Avi Patel, Divyaraj Danga
 
 ## Introduction / Proposal
 
